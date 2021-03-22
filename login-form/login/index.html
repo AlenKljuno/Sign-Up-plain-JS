@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header" class="none">
+        <h3>EduLink</h3>
+        <div>
+            <span id="user-info"></span>
+            <button onclick = 'logOut()'>Logout</button>
+        </div>
+    </div>
+    <div id="wrapper" class="none">
+        <h1>Dobrodošli</h1>
+    </div>
+    <div class="login-form  ">
+        <input onkeyup="loginOnEnter(event)" type="text" placeholder="email" id="email">
+        <input onkeyup="loginOnEnter(event)" type="password" placeholder="password" id="password">
+        <button id="login-btn" onclick="log()"> Log In </button>
+        <button id="signUp-btn" onclick="sign()"> Sign Up </button>
+    </div>
+    <div class="login-form none sign-up ">
+        <h1>Sign Up</h1>
+        <input type="text" placeholder="first name" id="firstName">
+        <input type="text" name=""  placeholder="last name"id="lastName"  >
+        <input  type="text" placeholder="email" id="signUpEmail">
+        <input type="text" placeholder="username" id="username">
+        <input  type="password" placeholder="password" id="signUpPassword">
+        <button id="signup-btn" onclick="saveUser()"> Sign Up </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
